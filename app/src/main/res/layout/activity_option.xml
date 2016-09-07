@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/lin_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="设 置 向 导"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="#3882FF"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_gamelines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="行列数（目前只支持4/5/6）"
+            android:textSize="22sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"/>
+
+        <Button
+            android:id="@+id/btn_gamelines"
+            android:layout_below="@id/tv_gamelines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:background="@drawable/bot_btn_select"
+            android:hint="请选择行、列数"/>
+        <TextView
+            android:id="@+id/tv_maxscore"
+            android:layout_below="@id/btn_gamelines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="目标分数"
+            android:textSize="22sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+        <Button
+            android:id="@+id/btn_gamescore"
+            android:layout_below="@id/tv_maxscore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:background="@drawable/bot_btn_select"
+            android:hint="请选择目标分数"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_gamescore"
+            android:text="我不会告诉你滑动超过一定距离时会有外挂效果哦！！！"
+            android:textSize="20sp"
+            android:textColor="@android:color/holo_red_light"
+            android:gravity="center"
+            android:layout_margin="20dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btn_backtoMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"
+            android:text="返回"
+            android:textSize="20sp"
+            android:background="@drawable/bot_btn_select"/>
+        <Button
+            android:id="@+id/btn_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:text="确定"
+            android:textSize="20sp"
+            android:visibility="gone"
+            android:background="@drawable/bot_btn_select"/>
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"/>
+
+    <Button
+        android:id="@+id/btn_share"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="敬请期待下一个新版本哦(*^__^*)"
+        android:textSize="18sp"
+        android:focusable="false"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:background="#FFF6AD"/>
+</LinearLayout>
